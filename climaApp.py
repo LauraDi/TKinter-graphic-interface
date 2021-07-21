@@ -1,5 +1,5 @@
 #####################################################################################################################################################
-#                      Programa que de acuerdo a una ciudad te da especificaciones del clima tomando los datos de https://openweathermap.org/
+#               Programa que de acuerdo a una ciudad te da especificaciones del clima tomando los datos de https://openweathermap.org/
 #####################################################################################################################################################
 
 
