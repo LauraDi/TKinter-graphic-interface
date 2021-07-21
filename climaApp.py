@@ -1,8 +1,5 @@
 from tkinter import *
 import requests
-from PIL import Image, ImageTk
-
-
 
 def mostrar_respuesta(clima):
     try:
@@ -29,19 +26,13 @@ def clima_JSON(ciudad):
     except:
         print("Error")
 
-    
-    #print(clima["name"])
-    #print(clima["weather"][0]["description"])
-    #print(clima["main"]["temp"])
 
 ventana=Tk()
-
 ventana.geometry("350x550")
 
 
 texto_ciudad=Entry(ventana, font =("Courier", 20, "normal"), justify="center")
 texto_ciudad.pack(padx=30, pady=30)
-
 
 obtener_clima= Button(ventana, text="Obtener clima", font=("Courier", 20, "normal"), command = lambda : clima_JSON(texto_ciudad.get()))
 obtener_clima.pack()
