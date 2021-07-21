@@ -7,9 +7,7 @@ i=0
 
 #Entrada
 e_texto=Entry(ventana, font = ("Calibri 20"))
-e_texto.grid(row=0, column =0, columnspan=4, padx=5, pady=5)#control sobre la posicion en la ventana
-#El padx es el ancho de separacion entre la ventana y lo que deseemos desplegar
-#El pady es la separacion pero en el eje y
+e_texto.grid(row=0, column=0, columnspan=4, padx=5, pady=5)#control sobre la posicion en la ventana
 
 #Funciones
 def click_boton(valor):
@@ -79,4 +77,5 @@ boton_igual.grid(row= 5, column= 3, padx=5, pady= 5)
 
 #Color fondo de la ventana
 ventana["bg"] = "pink" #otra forma de ponerlo es ventana.configure(background='pink')
+
 ventana.mainloop()
