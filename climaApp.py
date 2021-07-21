@@ -1,3 +1,8 @@
+#####################################################################################################################################################
+#                      Programa que de acuerdo a una ciudad te da especificaciones del clima tomando los datos de https://openweathermap.org/
+#####################################################################################################################################################
+
+
 from tkinter import *
 import requests
 
@@ -16,7 +21,7 @@ def mostrar_respuesta(clima):
 
 def clima_JSON(ciudad):
     try:
-        API_key=""
+        API_key="" #clave personal de pagina open weather
         URL="https://api.openweathermap.org/data/2.5/weather"
         parametros = {"APPID" : API_key, "q": ciudad, "units":"metric", "lang": "es"}
         response= requests.get(URL, params=parametros)
