@@ -3,8 +3,6 @@ import requests
 from PIL import Image, ImageTk
 
 
-#8719531f325f25fb155a81cc630aa89c
-#api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
 
 def mostrar_respuesta(clima):
     try:
@@ -21,7 +19,7 @@ def mostrar_respuesta(clima):
 
 def clima_JSON(ciudad):
     try:
-        API_key="8719531f325f25fb155a81cc630aa89c"
+        API_key=""
         URL="https://api.openweathermap.org/data/2.5/weather"
         parametros = {"APPID" : API_key, "q": ciudad, "units":"metric", "lang": "es"}
         response= requests.get(URL, params=parametros)
